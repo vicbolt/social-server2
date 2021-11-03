@@ -9,7 +9,7 @@ const path = require('path')
 const routes = require('./routes/index')
 
 
-const server = express()
+const server = express ()
 
 
 

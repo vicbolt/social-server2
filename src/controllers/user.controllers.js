@@ -10,7 +10,7 @@ const signUp = async (req,res) => {
 
         const file = req.file
 
-        const hostname = 'http://localhost:3200/'  //definimos la ruta que vamos a usar para guardar la foto
+        const hostname = config.hostname  //definimos la ruta que vamos a usar para guardar la foto
 
         const hash = await utils.bcrypt.encrypt(password1)
 

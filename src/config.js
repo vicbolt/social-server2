@@ -6,6 +6,7 @@ const config = {
     jwt: {
         secret:"3737eee28282",
     },
+    hostname: 'https://ss-vf.herokuapp.com/'
 }
 
 

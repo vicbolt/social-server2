@@ -2,6 +2,7 @@ const models = require('../models/index')
 
 const fs = require('fs/promises')
 const path = require('path') // lo instalamos para usar fs
+const config = require('../config')
 
 const upload = async (req,res) => {
     try{
@@ -12,7 +13,7 @@ const upload = async (req,res) => {
             return res.status(400).json({error: 'El usuario no existe'})
         }
 
-        const hostname = 'http://localhost:3200/'
+        const hostname = config.hostname
         const file = req.file
         const filename = hostname + file.filename
 

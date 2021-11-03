@@ -3,7 +3,7 @@ const { Router } = require ('express')
 const controllers = require('../controllers/index')
 const config= require('../config')
 
-const multer = require('multer')
+const multer = require ('multer')
 
 const storage = multer.diskStorage({
     destination: function(req,file,cb){
